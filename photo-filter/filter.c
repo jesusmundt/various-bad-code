@@ -6,6 +6,9 @@
 
 int main(int argc, char *argv[])
 {
+
+    //teste
+    int teste = pow(2,2);
     // Define allowable filters
     char *filters = "begr";
 
