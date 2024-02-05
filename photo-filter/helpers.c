@@ -68,7 +68,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width], RGBTRIPLE image
 {
     // Declaring an array to store the average for each RGB pixel and a new copy of the pixels array to store the new values
     float average[3];
-    rgbvalues imagecopy[height][width];
+    //rgbvalues imagecopy[height][width];
 
     // Loop to calculate the pixels averages
     for (int i = 0; i < height; i++)
@@ -192,7 +192,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width], RGBTRIPLE imag
     int GX[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
     int GY[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
     float sum_gx[3], sum_gy[3];
-    rgbvalues imagecopy[height][width];
+    //rgbvalues imagecopy[height][width];
 
     // Loop to calculate new pixels values
     for (int i = 0; i < height; i++)
