@@ -94,8 +94,8 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
             else
 
             {
-                image[k][l].rgbtBlue = 255;
-                image[k][l].rgbtGreen = 255;
+                image[k][l].rgbtBlue = 0;
+                image[k][l].rgbtGreen = 0;
                 image[k][l].rgbtRed = 255;
             }
         }
