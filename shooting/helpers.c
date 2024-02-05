@@ -38,7 +38,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
         average.green = sum.green / (height*width/25);
         average.red = sum.red / (height*width/25);
     }
-    return *average;
+    return average;
 
 }
 
