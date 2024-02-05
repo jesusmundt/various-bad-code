@@ -3,7 +3,7 @@
 
 float limit(float value, float max);
 
-// New typedef struct to create a copy of the pixels value 
+// New typedef struct to create a copy of the pixels value
 typedef struct
 {
     int blue;
