@@ -4,13 +4,13 @@
 float limit(float value, float max);
 
 // New typedef struct to create a copy of the pixels value
-typedef struct
+/*typedef struct
 {
     int blue;
     int green;
     int red;
 }
-rgbvalues;
+rgbvalues;*/
 
 
 // Convert image to grayscale
@@ -64,7 +64,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 }
 
 // Blur image
-void blur(int height, int width, RGBTRIPLE image[height][width])
+void blur(int height, int width, RGBTRIPLE image[height][width], RGBTRIPLE imagecopy[height][width])
 {
     // Declaring an array to store the average for each RGB pixel and a new copy of the pixels array to store the new values
     float average[3];
