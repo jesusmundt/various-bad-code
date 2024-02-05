@@ -57,7 +57,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
 
             if ((image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 < 20 || (image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 > 180 )
             {
-                for (int m = k; m < k + 10; m++)
+                for (int m = k; m < k + 15; m++)
                 {
                     for (int n = l; n < l + 15; n++)
                     {
