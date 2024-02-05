@@ -141,8 +141,9 @@ int main(int argc, char *argv[])
         }
     }
 
-    // Free memory for image
+    // Free memory for image and imagecopy
     free(image);
+    free(imagecopy);
 
     // Close files
     fclose(inptr);
