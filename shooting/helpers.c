@@ -4,16 +4,19 @@
 float limit(float value, float max);
 
 // New typedef struct to create a copy of the pixels value
-/*typedef struct
+typedef struct
 {
     int blue;
     int green;
     int red;
 }
-rgbvalues;*/
+rgbvalues;
 
 
-void getBackground(int height, int width, RGBTRIPLE image[height][width])
+rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
+{
+    
+}
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
