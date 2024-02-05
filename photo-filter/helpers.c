@@ -166,9 +166,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             }
 
             // New pixels values into a copy of the pixels array to keep original values for next calculations
-            imagecopy[i][j].blue = round(average[0]);
-            imagecopy[i][j].green = round(average[1]);
-            imagecopy[i][j].red = round(average[2]);
+            imagecopy[i][j].rgbtBlue = round(average[0]);
+            imagecopy[i][j].rgbtGreen = round(average[1]);
+            imagecopy[i][j].rgbtRed = round(average[2]);
         }
     }
 
@@ -177,9 +177,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            image[i][j].rgbtBlue = imagecopy[i][j].blue;
-            image[i][j].rgbtGreen = imagecopy[i][j].green;
-            image[i][j].rgbtRed = imagecopy[i][j].red;
+            image[i][j].rgbtBlue = imagecopy[i][j].rgbtBlue;
+            image[i][j].rgbtGreen = imagecopy[i][j].rgbtGreen;
+            image[i][j].rgbtRed = imagecopy[i][j].rgbtRed;
         }
     }
     return;
