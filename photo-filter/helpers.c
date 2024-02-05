@@ -372,9 +372,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width], RGBTRIPLE imag
             }
 
             // Calculate the final pixel value into a copy of the pixel array to keep oringal pixel values for next calculations
-            imagecopy[i][j].blue = round(limit(sqrt(pow(sum_gx[0], 2) + pow(sum_gy[0], 2)), 255));
-            imagecopy[i][j].green = round(limit(sqrt(pow(sum_gx[1], 2) + pow(sum_gy[1], 2)), 255));
-            imagecopy[i][j].red = round(limit(sqrt(pow(sum_gx[2], 2) + pow(sum_gy[2], 2)), 255));
+            imagecopy[i][j].rgbtBlue = round(limit(sqrt(pow(sum_gx[0], 2) + pow(sum_gy[0], 2)), 255));
+            imagecopy[i][j].rgbtGreen = round(limit(sqrt(pow(sum_gx[1], 2) + pow(sum_gy[1], 2)), 255));
+            imagecopy[i][j].rgbtRed = round(limit(sqrt(pow(sum_gx[2], 2) + pow(sum_gy[2], 2)), 255));
         }
     }
 
@@ -383,9 +383,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width], RGBTRIPLE imag
     {
         for (int j = 0; j < width; j++)
         {
-            image[i][j].rgbtBlue = imagecopy[i][j].blue;
-            image[i][j].rgbtGreen = imagecopy[i][j].green;
-            image[i][j].rgbtRed = imagecopy[i][j].red;
+            image[i][j].rgbtBlue = imagecopy[i][j].rgbtBlue;
+            image[i][j].rgbtGreen = imagecopy[i][j].rgbtGreen;
+            image[i][j].rgbtRed = imagecopy[i][j].rgbtRed;
         }
     }
 
