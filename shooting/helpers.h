@@ -1,5 +1,8 @@
 #include "bmp.h"
 
+// Calculate the target average background color of the 5% of the target
+rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width]);
+
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width]);
 
