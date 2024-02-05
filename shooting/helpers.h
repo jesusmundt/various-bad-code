@@ -1,5 +1,13 @@
 #include "bmp.h"
 
+typedef struct
+{
+    int blue;
+    int green;
+    int red;
+}
+rgbvalues;
+
 // Calculate the target average background color of the 5% of the target
 rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width]);
 
