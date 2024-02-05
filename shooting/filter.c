@@ -103,7 +103,8 @@ int main(int argc, char *argv[])
     {
         //getBackground
         case 'f':
-            rgbvalues average.blue = getBackground(height, width, image).blue;
+            rgbvalues average;
+            average.blue = getBackground(height, width, image).blue;
             printf("Background:%i", average.blue);
         // Blur
         case 'b':
