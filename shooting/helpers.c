@@ -19,6 +19,10 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
     rgbvalues average.green = 0;
     rgbvalues average.red = 0;
 
+    rgbvalues sum.blue = 0;
+    rgbvalues sum.green = 0;
+    rgbvalues sum.red = 0;
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
