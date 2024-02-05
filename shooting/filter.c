@@ -7,7 +7,7 @@
 int main(int argc, char *argv[])
 {
     // Define allowable filters
-    char *filters = "gbegr";
+    char *filters = "fbegr";
 
     // Get filter flag and check validity
     char filter = getopt(argc, argv, filters);
@@ -102,7 +102,7 @@ int main(int argc, char *argv[])
     switch (filter)
     {
         //getBackground
-        case 'g':
+        case 'f':
             getBackground(height, width, image);
             printf("Background:%i", average.blue);
         // Blur
