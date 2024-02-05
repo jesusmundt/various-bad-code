@@ -52,6 +52,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
                 for (int m = k; m < k + 20; m++)
                 {
                     for (int n = l; n < l + 20; n++)
+
                     
 
                 }
