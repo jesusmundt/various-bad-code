@@ -54,7 +54,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
             sum.green = 0;
             sum.red = 0;
 
-            if ((image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 < 100 || (image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 > 190 )
+            if ((image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 < 80 || (image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 > 200 )
             {
                 for (int m = k; m < k + 20; m++)
                 {
@@ -73,7 +73,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
 
                 }
 
-                if ((average.blue + average.green + average.red) / 3 < 100 || (average.blue + average.green + average.red) / 3 > 190)
+                if ((average.blue + average.green + average.red) / 3 < 80 || (average.blue + average.green + average.red) / 3 > 200)
                 {
                     image[k][l].rgbtBlue = 0;
                     image[k][l].rgbtGreen = 0;
@@ -88,6 +88,14 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
                     image[k][l].rgbtRed = 255;
                 }
 
+            }
+
+            else
+
+            {
+                image[k][l].rgbtBlue = 0;
+                image[k][l].rgbtGreen = 0;
+                image[k][l].rgbtRed = 255;
             }
         }
     }
