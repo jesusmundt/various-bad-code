@@ -12,14 +12,6 @@ typedef struct
 }
 rgbvalues;
 
-// Allocate memory for image
-RGBTRIPLE(*imagecopy)[width] = calloc(height, width * sizeof(RGBTRIPLE));
-if (imagecopy == NULL)
-{
-    printf("Not enough memory to store image.\n");
-    return 7;
-}
-
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -396,8 +388,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             image[i][j].rgbtRed = imagecopy[i][j].red;
         }
     }
-
-    free (imagecopy);
 
     return;
 }
