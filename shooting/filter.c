@@ -103,7 +103,11 @@ int main(int argc, char *argv[])
     {
         //getBackground
         case 'f':
-            printf("Background:%i", getBackground(height, width, image).blue);
+            printf("Blue: %i \n", getBackground(height, width, image).blue);
+            printf("Green: %i \n", getBackground(height, width, image).green);
+            printf("Red: %i \n", getBackground(height, width, image).red);
+            break;
+            
         // Blur
         case 'b':
             blur(height, width, image, imagecopy);
