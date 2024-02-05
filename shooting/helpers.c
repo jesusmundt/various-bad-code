@@ -23,12 +23,10 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
     rgbvalues sum.green = 0;
     rgbvalues sum.red = 0;
 
-    for (int i = 0; i < height; i++)
+    for (int i = 0; i < (height/5); i++)
     {
-        for (int j = 0; j < width; j++)
+        for (int j = 0; j < (width/5); j++)
         {
-
-            if (image[i][j].rgbtBlue > 150 && image[i][j].rgbtGreen)
 
             sum.blue = sum.blue + image[i][j].rgbtBlue;
             sum.green = sum.green + image[i][j].rgbtGreen;
@@ -36,9 +34,9 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
 
         }
 
-        average.blue = sum.blue / (height*width);
-        average.green = sum.green / (height*width);
-        average.red = sum.red / (height*width);
+        average.blue = sum.blue / (height*width/25);
+        average.green = sum.green / (height*width/25);
+        average.red = sum.red / (height*width/25);
     }
     return average;
 
