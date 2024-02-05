@@ -76,7 +76,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
 
                 /*if (abs(average.blue - (average.blue + average.green + average.red) / 3) > 5 || abs(average.green - (average.blue + average.green + average.red) / 3) > 5
                 || abs(average.red - (average.blue + average.green + average.red) / 3) > 5)*/
-                if (abs(average.blue - image[k][l].rgbtBlue) < 20 && abs(average.green - image[k][l].rgbtGreen) < 20 && abs(average.red - image[k][l].rgbtRed) < 20)
+                if (abs(average.blue - image[k][l].rgbtBlue) < 30 && abs(average.green - image[k][l].rgbtGreen) < 30 && abs(average.red - image[k][l].rgbtRed) < 30)
                 {
                     image[k][l].rgbtBlue = 0;
                     image[k][l].rgbtGreen = 0;
