@@ -74,9 +74,10 @@ int main(int argc, char *argv[])
     int height = abs(bi.biHeight);
     int width = bi.biWidth;
 
-    // Allocate memory for image
+    // Allocate memory for image and imagecopy
     RGBTRIPLE(*image)[width] = calloc(height, width * sizeof(RGBTRIPLE));
-    if (image == NULL)
+    RGBTRIPLE(*imagecopy)[width] = calloc(height, width * sizeof(RGBTRIPLE));
+    if (image == NULL || imagecopy == NULL)
     {
         printf("Not enough memory to store image.\n");
         fclose(outptr);
