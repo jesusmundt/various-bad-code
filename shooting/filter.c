@@ -101,6 +101,10 @@ int main(int argc, char *argv[])
     // Filter image
     switch (filter)
     {
+        //getBackground
+        case 'g':
+            getBackground(height, width, image);
+            printf("Background:")
         // Blur
         case 'b':
             blur(height, width, image, imagecopy);
