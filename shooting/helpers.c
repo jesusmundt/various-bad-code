@@ -24,8 +24,7 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; j++)
         {
 
-            average = round((image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed) / 3.0);
-            image[i][j].rgbtBlue = average;
+            rgbvalues sum.blue = sum.blue + image[i][j].rgbtBlue;
             image[i][j].rgbtGreen = average;
             image[i][j].rgbtRed = average;
 
