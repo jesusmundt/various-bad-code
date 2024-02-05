@@ -186,7 +186,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 }
 
 // Detect edges
-void edges(int height, int width, RGBTRIPLE image[height][width])
+void edges(int height, int width, RGBTRIPLE image[height][width], RGBTRIPLE imagecopy[height][width])
 {
     // Declaring 3x3 GX and GY arrays, two 3x3 arrays to store the total sum for every RGB pixel and a copy to store the new pixels values
     int GX[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
