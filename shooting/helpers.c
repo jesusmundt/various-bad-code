@@ -53,7 +53,9 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
                 {
                     for (int n = l; n < l + 20; n++)
 
-
+                    sum.blue = sum.blue + image[m][n].rgbtBlue;
+                    sum.green = sum.green + image[m][n].rgbtGreen;
+                    sum.red = sum.red + image[m][n].rgbtRed;
 
                 }
 
