@@ -13,7 +13,10 @@ float limit(float value, float max);
 }
 rgbvalues;*/
 
-
+int getBulletSize(int height, int width)
+{
+    
+}
 
 
 rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
