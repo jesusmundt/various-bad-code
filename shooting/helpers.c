@@ -15,7 +15,11 @@ rgbvalues;*/
 
 int getBulletSize(int height, int width)
 {
-    
+    float pixelSize = 0.26;
+
+    float bulletSize = 9;
+
+    return 
 }
 
 
