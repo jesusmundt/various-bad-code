@@ -14,6 +14,8 @@ float limit(float value, float max);
 rgbvalues;*/
 
 
+
+
 rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
 {
     rgbvalues average, sum, averageB, sumB;
