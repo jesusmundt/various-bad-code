@@ -58,9 +58,9 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
             if ((image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 < (averageB.blue + averageB.green + averageB.red) * 0.8 / 3 || (image[k][l].rgbtBlue + image[k][l].rgbtGreen
                 + image[k][l].rgbtRed) / 3 > (averageB.blue + averageB.green + averageB.red) * 1.6 / 3 )
             {
-                for (int m = k - 30; m < k + 30; m++)
+                for (int m = k - 20; m < k + 20; m++)
                 {
-                    for (int n = l; n < l + 60; n++)
+                    for (int n = l; n < l + 40; n++)
                     {
 
                     sum.blue = sum.blue + image[m][n].rgbtBlue;
