@@ -13,7 +13,7 @@ float limit(float value, float max);
 }
 rgbvalues;*/
 
-int getBulletPixelSize(int height, float bulletsize, float targetheight)
+int getBulletPixelSize(int height, float bulletsize)
 {
     const PIXELSIZE = 0.26;
 
