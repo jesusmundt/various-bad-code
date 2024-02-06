@@ -19,7 +19,7 @@ int getBulletSize(int height, int width)
 
     float bulletSize = 9;
 
-    return 
+    float targetSize = 
 }
 
 
