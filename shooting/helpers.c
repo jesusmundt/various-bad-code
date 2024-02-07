@@ -69,17 +69,21 @@ void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 
 rgbvalues getBackground(int height, int width)
 {
-    rgbvalues average[samples], sum[samples];
+    int sections = 4;
+    rgbvalues average[sections], sum[sections];
 
-    averageB.blue = 0;
-    averageB.green = 0;
-    averageB.red = 0;
+    for (int i = 0; i < sections; i++)
+    {
+        averageB[i].blue = 0;
+        averageB[i].green = 0;
+        averageB[i].red = 0;
 
-    sumB.blue = 0;
-    sumB.green = 0;
-    sumB.red = 0;
+        sumB[i].blue = 0;
+        sumB[i].green = 0;
+        sumB[i].red = 0;
+    }
 
-    for (int i = 0; i < (height/4); i++)
+    for (int j = 0; j < (height/4); j++)
     {
         for (int j = 0; j < (width/4); j++)
         {
