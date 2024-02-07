@@ -37,7 +37,7 @@ void findHoles(int height, int width, RGBTRIPLE image[height][width], float bull
             {
                 for (int k = 0; k < maxpixels; k++)
                 {
-
+                    
                 }
             }
         }
