@@ -25,7 +25,9 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
 // Tool to print a matrix with RGB values
 void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 {
-    int sum = 0;
+    rgbvalues sum.blue = 0;
+    rgbvalues sum.green = 0;
+    rgbvalues sum.red = 0;
 
     for (int i = 950; i < 1020; i++)
     {
@@ -35,7 +37,9 @@ void printMatrix(int height, int width, RGBTRIPLE image[height][width])
             printf("%i, ", image[i][j].rgbtGreen);
             printf("%i, ", image[i][j].rgbtRed);
             printf(" ");
-            sum = sum + image[i][j].rgbtBlue;
+            sum.blue = sum.blue + image[i][j].rgbtBlue;
+            sum.green = sum.green + image[i][j].rgbtGreen;
+            sum.red = sum.red + image[i][j].rgbtRed;
         }
 
         printf("\n");
