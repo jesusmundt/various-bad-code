@@ -69,7 +69,7 @@ void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 
 rgbvalues getBackground(int height, int width, int samples, int samplesize)
 {
-    rgbvalues average, sum, averageB, sumB;
+    rgbvalues average[samples], sum[samples];
 
     averageB.blue = 0;
     averageB.green = 0;
