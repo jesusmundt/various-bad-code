@@ -96,68 +96,6 @@ rgbvalues getBackground(int height, int width, RGBTRIPLE image[height][width])
 
     }
 
-    for (int k = 0; k < (height); k++)
-    {
-        for (int l = 0; l < (width); l++)
-        {
-            average.blue = 0;
-            average.green = 0;
-            average.red = 0;
-
-            sum.blue = 0;
-            sum.green = 0;
-            sum.red = 0;
-
-            if ((image[k][l].rgbtBlue + image[k][l].rgbtGreen + image[k][l].rgbtRed) / 3 < (averageB.blue + averageB.green + averageB.red) * 0.8 / 3 || (image[k][l].rgbtBlue + image[k][l].rgbtGreen
-                + image[k][l].rgbtRed) / 3 > (averageB.blue + averageB.green + averageB.red) * 1.6 / 3 )
-            {
-                for (int m = k; m < k + 30; m++)
-                {
-                    for (int n = l; n < l + 20; n++)
-                    {
-
-                    sum.blue = sum.blue + image[m][n].rgbtBlue;
-                    sum.green = sum.green + image[m][n].rgbtGreen;
-                    sum.red = sum.red + image[m][n].rgbtRed;
-
-                    average.blue = sum.blue / 900;
-                    average.green = sum.green / 900;
-                    average.red = sum.red / 900;
-
-                    }
-
-                }
-
-                /*if (abs(average.blue - (average.blue + average.green + average.red) / 3) > 5 || abs(average.green - (average.blue + average.green + average.red) / 3) > 5
-                || abs(average.red - (average.blue + average.green + average.red) / 3) > 5)*/
-                if ((average.blue + average.green + average.red) / 3 < (averageB.blue + averageB.green + averageB.red) * 0.1 / 3 || (average.blue + average.green + average.red)
-                    / 3 > (averageB.blue + averageB.green + averageB.red) * 1.8 / 3)
-                {
-                    image[k][l].rgbtBlue = 0;
-                    image[k][l].rgbtGreen = 0;
-                    image[k][l].rgbtRed = 0;
-                }
-
-                else
-
-                {
-                    image[k][l].rgbtBlue = 255;
-                    image[k][l].rgbtGreen = 255;
-                    image[k][l].rgbtRed = 255;
-                }
-
-            }
-
-            else
-
-            {
-                image[k][l].rgbtBlue = 0;
-                image[k][l].rgbtGreen = 0;
-                image[k][l].rgbtRed = 255;
-            }
-        }
-    }
-
     return average;
 
 }
