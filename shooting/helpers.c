@@ -22,7 +22,7 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
     return bulletsize * verticalres;
 
 }
-
+// Tool to print a matrix with RGB values
 void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 {
     int sum = 0;
@@ -41,7 +41,7 @@ void printMatrix(int height, int width, RGBTRIPLE image[height][width])
     printf("%i \n", sum);
 }
 
-
+// Get background average RGB values
 rgbvalues getBackground(int height, int width)
 {
     rgbvalues average, sum;
@@ -58,14 +58,12 @@ rgbvalues getBackground(int height, int width)
     {
         for (int j = 0; j < (width); j++)
         {
-            if (i > height / 3 && i < 2 * height /3 && j > width / 3 && j < 2 * width / 3)
+            if (!(i > height / 3 && i < 2 * height /3 && j > width / 3 && j < 2 * width / 3))
             {
-                sum.blue
+                sum.blue = sum.blue + image[i][j].rgbtBlue;
+                sum.green = sum.green + image[i][j].rgbtGreen;
+                sum.red = sum.red + image[i][j].rgbtRed;
             }
-            sum.blue = sum.blue + image[i][j].rgbtBlue;
-            sum.green = sum.green + image[i][j].rgbtGreen;
-            sum.red = sum.red + image[i][j].rgbtRed;
-
         }
     }
 
