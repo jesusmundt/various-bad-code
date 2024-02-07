@@ -58,17 +58,20 @@ rgbvalues getBackground(int height, int width)
     {
         for (int j = 0; j < (width); j++)
         {
-            if ()
-            sum.blue = sumB.blue + image[i][j].rgbtBlue;
-            sum.green = sumB.green + image[i][j].rgbtGreen;
-            sum.red = sumB.red + image[i][j].rgbtRed;
+            if (i > height / 3 && i < 2 * height /3 && j > width / 3 && j < 2 * width / 3)
+            {
+                sum.blue
+            }
+            sum.blue = sum.blue + image[i][j].rgbtBlue;
+            sum.green = sum.green + image[i][j].rgbtGreen;
+            sum.red = sum.red + image[i][j].rgbtRed;
 
         }
     }
 
-    average.blue = sumB.blue / (height * width - height * width / 9);
-    average.green = sumB.green / (height * width - height * width / 9);
-    average.red = sumB.red / (height * width - height * width / 9);
+    average.blue = sum.blue / (height * width - height * width / 9);
+    average.green = sum.green / (height * width - height * width / 9);
+    average.red = sum.red / (height * width - height * width / 9);
 
     return average;
 
