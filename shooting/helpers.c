@@ -27,13 +27,18 @@ void findHoles(int height, int width, RGBTRIPLE image[height][width])
 {
     int edgergbmin = 100, edgergbmax = 255;
 
+    int maxpixels = 
+
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
             if ((image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed) / 3 > edgergbmin)
             {
-                for (int k = 0; k < )
+                for (int k = 0; k < maxpixels; k++)
+                {
+
+                }
             }
         }
     }
