@@ -39,7 +39,7 @@ void findHoles(int height, int width, RGBTRIPLE image[height][width], float bull
                 {
                     int l = i, m = j;
 
-                    if ()
+                    Do while ()
 
                 }
             }
