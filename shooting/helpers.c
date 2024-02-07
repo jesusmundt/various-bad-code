@@ -5,15 +5,7 @@
 
 float limit(float value, float max);
 
-// New typedef struct to create a copy of the pixels value
-/*typedef struct
-{
-    int blue;
-    int green;
-    int red;
-}
-rgbvalues;*/
-
+// Calculate bullet pixel size
 int getBulletPixelSize(int height, float bulletsize, float targetheight)
 {
 
@@ -22,7 +14,8 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
     return bulletsize * verticalres;
 
 }
-// Tool to print a matrix with RGB values
+
+// Tool to print a matrix with RGB values and the sum of those values
 void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 {
     rgbvalues sum.blue = 0;
@@ -45,7 +38,7 @@ void printMatrix(int height, int width, RGBTRIPLE image[height][width])
         printf("\n");
     }
 
-    printf("%i \n", sum);
+    printf("%i, %i, %i\n", sum.blue, sum.green, sum.red);
 }
 
 // Get background average RGB values
