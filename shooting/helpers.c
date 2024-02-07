@@ -85,7 +85,7 @@ rgbvalues getBackground(int height, int width)
 
     for (int j = 0; j < (height/4); j++)
     {
-        for (int j = 0; j < (width/4); j++)
+        for (int k = 0; k < (width/2); k++)
         {
 
             sumB.blue = sumB.blue + image[i][j].rgbtBlue;
