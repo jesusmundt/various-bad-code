@@ -32,6 +32,9 @@ void printMatrix(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 1150; j < 1220; j++)
         {
             printf("%i, ", image[i][j].rgbtBlue);
+            printf("%i, ", image[i][j].rgbtGreen);
+            printf("%i, ", image[i][j].rgbtRed);
+            printf(" ");
             sum = sum + image[i][j].rgbtBlue;
         }
 
