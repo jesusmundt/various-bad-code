@@ -23,6 +23,8 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
 
 }
 
+void findHoles(int height, int width, RGBTRIPLE image[height][width])
+
 void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 {
     int sum = 0;
