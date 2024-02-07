@@ -1,6 +1,7 @@
 #include "helpers.h"
 #include <math.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 float limit(float value, float max);
 
@@ -20,6 +21,24 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
 
     return bulletsize * verticalres;
 
+}
+
+void printMatrix(int height, int width, RGBTRIPLE image[height][width])
+{
+    int sum = 0;
+
+    for (int i = 950; i < 1020; i++)
+    {
+        for (int j = 1150; j < 1220; j++)
+        {
+            printf("%i, ", image[i][j].rgbtBlue);
+            sum = sum + image[i][j].rgbtBlue;
+        }
+
+        printf("\n");
+    }
+
+    printf("%i \n", sum);
 }
 
 
