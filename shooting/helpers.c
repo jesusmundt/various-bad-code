@@ -25,7 +25,7 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
 
 void findHoles(int height, int width, RGBTRIPLE image[height][width], float bulletsize, float targetheight)
 {
-    int edgergbmin = 100, edgergbmax = 255;
+    int edgergbmin = 100;
 
     int maxpixels = pi * getBulletPixelSize(height, bulletsize, targetheight) * 10;
 
@@ -37,7 +37,10 @@ void findHoles(int height, int width, RGBTRIPLE image[height][width], float bull
             {
                 for (int k = 0; k < maxpixels; k++)
                 {
-                    
+                    int l = i, m = j;
+
+                    if ()
+
                 }
             }
         }
