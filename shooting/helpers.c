@@ -23,31 +23,6 @@ int getBulletPixelSize(int height, float bulletsize, float targetheight)
 
 }
 
-void findHoles(int height, int width, RGBTRIPLE image[height][width], float bulletsize, float targetheight)
-{
-    int edgergbmin = 100;
-
-    int maxpixels = pi * getBulletPixelSize(height, bulletsize, targetheight) * 10;
-
-    for (int i = 0; i < height; i++)
-    {
-        for (int j = 0; j < width; j++)
-        {
-            if ((image[i][j].rgbtBlue + image[i][j].rgbtGreen + image[i][j].rgbtRed) / 3 > edgergbmin)
-            {
-                for (int k = 0; k < maxpixels; k++)
-                {
-                    int l = i, m = j;
-
-                    Do while ((l =! i || m =! j) || )
-
-                }
-            }
-        }
-    }
-
-}
-
 void printMatrix(int height, int width, RGBTRIPLE image[height][width])
 {
     int sum = 0;
@@ -84,9 +59,9 @@ rgbvalues getBackground(int height, int width)
         for (int j = 0; j < (width); j++)
         {
             if ()
-            sum.blue = sumB.blue + image[j][k].rgbtBlue;
-            sum.green = sumB.green + image[j][k].rgbtGreen;
-            sum.red = sumB.red + image[j][k].rgbtRed;
+            sum.blue = sumB.blue + image[i][j].rgbtBlue;
+            sum.green = sumB.green + image[i][j].rgbtGreen;
+            sum.red = sumB.red + image[i][j].rgbtRed;
 
         }
     }
